@@ -17,8 +17,7 @@ $(function(){
         countriesList.empty();
         resp.forEach(function(item){
            
-            $('#countries').text(item.name).appendTo(countriesList);
-            //$('<li id="flag">').text(item.flag).appendTo(countriesList);     
+            $('#countries').text(item.name).appendTo(countriesList);     
             $('<li id="capital">').text(item.capital).appendTo(countriesList);
             $('<li id="languages">').text(item.languages).appendTo(countriesList);
             $('<li id="borders">').text(item.borders).appendTo(countriesList);

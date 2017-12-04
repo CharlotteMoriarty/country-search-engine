@@ -11,10 +11,10 @@ $(function(){
             method: 'GET',
             success: showCountriesList
         });
+        countriesList.empty();
     }
    
-    function showCountriesList(resp) {
-        countriesList.empty();
+    function showCountriesList(resp) {      
         resp.forEach(function(item){
            
             $('#countries').text(item.name).appendTo(countriesList);     
